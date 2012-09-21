@@ -66,5 +66,8 @@ rm -rf /tmp/pentaho-biserver-installer-*
 # tip
 echo "Use '/opt/biserver/biserver-ce/start-pentaho.sh' to start biserver."
 echo "Use '/opt/biserver/biserver-ce/stop-pentaho.sh' to stop biserver."
-echo "Use '/opt/biserver/administration-console/start-pac.sh to start biserver admin console.'"
-echo "Use '/opt/biserver/administration-console/stop-pac.sh' to stop biserver admin console."
+
+# Admin console can't start by /opt/biserver/administration-console/start-pac.sh, maybe a bug, need fix.
+echo "Execute 'cd /opt/biserver/administration-console'"
+echo "Use 'start-pac.sh to start biserver admin console.'"
+echo "Use 'stop-pac.sh' to stop biserver admin console."
